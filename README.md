@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/OzoNeTT/lab-04-stack.svg?branch=master)](https://travis-ci.org/OzoNeTT/lab-04-stack)
 # Лабораторная работа №4
 
 ## Задание 1
