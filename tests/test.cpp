@@ -6,7 +6,7 @@
 
 TEST(Stack, simple)
 {
-    Stack<int> st;
+    StackTwo<int> st;
     st.push(10);
     EXPECT_EQ(st.head(), 10);
     st.push_emplace(1);
@@ -26,3 +26,21 @@ TEST(Stack, simple)
 
 }
 
+TEST(Stack2, simple)
+{
+    StackOne<int> st;
+    st.push(10);
+    EXPECT_EQ(st.head(), 10);
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.push(5);
+    EXPECT_EQ(st.head(), 5);
+    st.pop();
+    EXPECT_EQ(st.head(), 4);
+    st.pop();
+    EXPECT_EQ(st.head(), 3);
+    st.pop();
+    EXPECT_EQ(st.head(), 2);
+
+}
